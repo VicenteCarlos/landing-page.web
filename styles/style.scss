@@ -1,6 +1,10 @@
 @import "./variables.scss";
+@import "./mixin.scss";
 
-
+body {
+  background-color: #5b5049;
+  color: white;
+}
 
 #container {
   width: 100vw;
@@ -9,12 +13,50 @@
   flex-direction: column;
   align-items: center;
 
-  #content-img {
-    width: 80vw;
-
+  #content-infos {
+    width: 85%;
+    margin-top: 2rem;
 
     img {
       width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .infos-event {
+      text-align: center;
+      margin-top: 1.2rem;
+
+      h1 {
+        font-size: 2rem;
+
+        span {
+          color: $secondary-color;
+          text-transform: uppercase;
+        }
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+
+        span {
+          color: $primary-color;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+
+      button {
+        margin-top: 1rem;
+        background-color: #FF4707;
+        border-radius: 0.5rem;
+        padding: 0.7rem;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 90%;
+      }
     }
   }
 }
