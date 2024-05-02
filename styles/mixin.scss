@@ -1,0 +1,8 @@
+@use "sass:meta";
+@use "sass:string";
+
+@mixin media($width) {
+  @media only screen and (min-width: $width) {
+    @content
+  }
+}
