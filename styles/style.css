@@ -3,44 +3,17 @@ body {
   color: white;
 }
 
-#container {
+section {
   width: 100vw;
-  height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#container #content-infos {
-  width: 85%;
-  margin-top: 2rem;
-}
-#container #content-infos img {
-  width: 100%;
-  border-radius: 0.5rem;
-}
-#container #content-infos .infos-event {
-  text-align: center;
-  margin-top: 1.2rem;
-}
-#container #content-infos .infos-event h1 {
-  font-size: 2rem;
-}
-#container #content-infos .infos-event h1 span {
-  color: #B89C72;
-  text-transform: uppercase;
-}
-#container #content-infos .infos-event p {
-  font-size: 1.3rem;
-  margin-top: 1rem;
-}
-#container #content-infos .infos-event p span {
-  color: #FFC107;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-#container #content-infos .infos-event button {
-  margin-top: 1rem;
-  background-color: #FF4707;
+
+button {
+  margin-top: 1.5rem;
+  background-color: #ff4707;
   border-radius: 0.5rem;
   padding: 0.7rem;
   color: white;
@@ -48,4 +21,285 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   width: 90%;
+}
+
+#content-infos {
+  margin-top: 2rem;
+}
+#content-infos img {
+  width: 85%;
+  border-radius: 0.5rem;
+}
+#content-infos .infos-event {
+  text-align: center;
+  margin-top: 1.2rem;
+  width: 85%;
+}
+#content-infos .infos-event h1 {
+  font-size: 2rem;
+}
+#content-infos .infos-event h1 span {
+  color: #B89C72;
+  text-transform: uppercase;
+}
+#content-infos .infos-event p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+#content-infos .infos-event p span {
+  color: #FFC107;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#more-infos-imersao hgroup,
+#more-infos-imersao p,
+#more-infos-imersao ul {
+  width: 85%;
+}
+#more-infos-imersao hgroup {
+  border-top: 2px solid #B89C72;
+  margin-top: 3rem;
+}
+#more-infos-imersao hgroup h2 {
+  color: #FFC107;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 85%;
+  margin: 2rem auto 0 auto;
+}
+#more-infos-imersao hgroup h3 {
+  width: 85%;
+  margin: 0.7rem auto 0 auto;
+}
+#more-infos-imersao p {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  text-align: justify;
+}
+#more-infos-imersao ul {
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  margin-left: 13%;
+  text-align: justify;
+}
+#more-infos-imersao ul li {
+  margin: 0.5rem 0;
+}
+#more-infos-imersao p span {
+  font-weight: 600;
+}
+#more-infos-imersao p .span-primary-color {
+  color: #FFC107;
+  text-transform: uppercase;
+}
+
+#prices h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #FFC107;
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  margin: 3rem auto 0 auto;
+  width: 85%;
+}
+#prices span {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+#prices p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 50%;
+  margin-top: 1rem;
+}
+#prices p span {
+  color: #FFC107;
+}
+#prices .limit-times {
+  font-size: 1rem;
+  font-weight: initial;
+  text-transform: initial;
+}
+#prices .bt-prices {
+  width: 60%;
+}
+#prices .legend-prices {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  width: 60%;
+}
+
+#ofert-of-month-woman h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  margin: 3rem auto 0 auto;
+  width: 85%;
+}
+#ofert-of-month-woman .bt-ofert {
+  width: 80%;
+}
+#ofert-of-month-woman #about-flavia img {
+  width: 20rem;
+}
+#ofert-of-month-woman #about-flavia .infos-flavia {
+  display: flex;
+  flex-direction: column;
+}
+#ofert-of-month-woman #about-flavia .infos-flavia h2 {
+  border: none;
+  padding-top: 0;
+}
+#ofert-of-month-woman #about-flavia .infos-flavia p {
+  font-size: 1.2rem;
+  width: 85%;
+  margin: 1rem auto 0 auto;
+  line-height: 2rem;
+}
+
+#event-localization {
+  align-items: start;
+}
+#event-localization h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: left;
+  color: #FFC107;
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  margin: 3rem auto 0 auto;
+  width: 85%;
+}
+#event-localization .localization {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 1rem;
+}
+#event-localization .localization p {
+  margin: 0.3rem 0;
+}
+#event-localization .localization p span {
+  color: #FFC107;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#guarantee figure {
+  width: 85%;
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  margin: 2rem auto 0 auto;
+}
+#guarantee figure img {
+  width: 7.5rem;
+  color: red;
+}
+#guarantee figure figcaption {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+#guarantee h3 {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  width: 85%;
+}
+#guarantee p {
+  width: 85%;
+  font-size: 1.1rem;
+}
+#guarantee p span {
+  font-weight: 400;
+}
+
+#questions {
+  text-align: center;
+}
+#questions h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  margin: 3rem auto 0 auto;
+  width: 85%;
+}
+#questions .dropdown {
+  width: 80%;
+  border-radius: 0.5rem;
+  background-color: #B89C72;
+  margin: 0.7rem 0;
+  font-size: 1.42rem;
+  font-weight: 600;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#questions .dropdown div {
+  display: none;
+}
+#questions .dropdown ol {
+  display: none;
+}
+#questions .dropdown:hover div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 1rem;
+  line-height: 2.2rem;
+}
+#questions .dropdown:hover ol {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin-top: 1rem;
+  line-height: 2.2rem;
+}
+#questions .dropdown:hover ol li {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+#questions :nth-child(2) {
+  margin-top: 2rem;
+}
+
+#networks nav {
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  margin: 3rem auto 0 auto;
+  width: 85%;
+}
+#networks nav ul {
+  display: flex;
+  justify-content: center;
+}
+#networks nav ul li {
+  margin: 0 1rem;
+  list-style-type: none;
+}
+#networks nav ul li a img {
+  width: 2rem;
+}
+
+footer strong {
+  display: flex;
+  text-align: center;
+  width: 75%;
+  margin: 1rem auto;
 }/*# sourceMappingURL=style.css.map */

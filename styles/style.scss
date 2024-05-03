@@ -6,57 +6,366 @@ body {
   color: white;
 }
 
-#container {
+section {
   width: 100vw;
-  height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  #content-infos {
+button {
+  margin-top: 1.5rem;
+  background-color: #ff4707;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 90%;
+}
+
+#content-infos {
+  margin-top: 2rem;
+
+  img {
     width: 85%;
-    margin-top: 2rem;
+    border-radius: 0.5rem;
+  }
 
-    img {
-      width: 100%;
-      border-radius: 0.5rem;
+  .infos-event {
+    text-align: center;
+    margin-top: 1.2rem;
+    width: 85%;
+
+    h1 {
+      font-size: 2rem;
+
+      span {
+        color: $secondary-color;
+        text-transform: uppercase;
+      }
     }
 
-    .infos-event {
-      text-align: center;
-      margin-top: 1.2rem;
+    p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
 
-      h1 {
-        font-size: 2rem;
+      span {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}
 
-        span {
-          color: $secondary-color;
-          text-transform: uppercase;
-        }
+#more-infos-imersao {
+  hgroup,
+  p,
+  ul {
+    width: 85%;
+  }
+
+  hgroup {
+    border-top: 2px solid $secondary-color;
+    margin-top: 3rem;
+
+    h2 {
+      color: $primary-color;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      width: 85%;
+      margin: 2rem auto 0 auto;
+    }
+
+    h3 {
+      width: 85%;
+      margin: 0.7rem auto 0 auto;
+    }
+  }
+
+  p {
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+    text-align: justify;
+  }
+
+  ul {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-left: 13%;
+    text-align: justify;
+
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+
+  p {
+    span {
+      font-weight: 600;
+    }
+
+    .span-primary-color {
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#prices {
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    margin: 3rem auto 0 auto;
+    width: 85%;
+  }
+
+  span {
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 50%;
+    margin-top: 1rem;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  .limit-times {
+    font-size: 1rem;
+    font-weight: initial;
+    text-transform: initial;
+  }
+
+  .bt-prices {
+    width: 60%;
+  }
+
+  .legend-prices {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8rem;
+    width: 60%;
+  }
+}
+
+#ofert-of-month-woman {
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    margin: 3rem auto 0 auto;
+    width: 85%;
+  }
+
+  .bt-ofert {
+    width: 80%;
+  }
+
+  #about-flavia {
+    img {
+      width: 20rem;
+    }
+
+    .infos-flavia {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        border: none;
+        padding-top: 0;
       }
 
       p {
-        font-size: 1.3rem;
-        margin-top: 1rem;
-
-        span {
-          color: $primary-color;
-          text-transform: uppercase;
-          font-weight: 600;
-        }
-      }
-
-      button {
-        margin-top: 1rem;
-        background-color: #FF4707;
-        border-radius: 0.5rem;
-        padding: 0.7rem;
-        color: white;
-        text-transform: uppercase;
         font-size: 1.2rem;
-        font-weight: 600;
-        width: 90%;
+        width: 85%;
+        margin: 1rem auto 0 auto;
+        line-height: 2rem;
       }
     }
+  }
+}
+
+#event-localization {
+  align-items: start;
+
+  h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: left;
+    color: $primary-color;
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    margin: 3rem auto 0 auto;
+    width: 85%;
+  }
+
+  .localization {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    font-size: 1.2rem;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 1rem;
+
+    p {
+      margin: 0.3rem 0;
+
+      span {
+        color: $primary-color;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#guarantee {
+  figure {
+    width: 85%;
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    margin: 2rem auto 0 auto;
+
+    img {
+      width: 7.5rem;
+      color: red;
+    }
+
+    figcaption {
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+    }
+  }
+
+  h3 {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    width: 85%;
+  }
+
+  p {
+    width: 85%;
+    font-size: 1.1rem;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+#questions {
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    margin: 3rem auto 0 auto;
+    width: 85%;
+  }
+
+  .dropdown {
+    width: 80%;
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+    margin: 0.7rem 0;
+    font-size: 1.42rem;
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      display: none;
+    }
+
+    ol {
+      display: none;
+    }
+
+    &:hover div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: black;
+      margin-top: 1rem;
+      line-height: 2.2rem;
+    }
+
+    &:hover ol {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+      margin-top: 1rem;
+      line-height: 2.2rem;
+
+      li {
+        list-style-type: none;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  :nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+
+#networks {
+  nav {
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    margin: 3rem auto 0 auto;
+    width: 85%;
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 1rem;
+        list-style-type: none;
+
+        a {
+          img {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  strong {
+    display: flex;
+    text-align: center;
+    width: 75%;
+    margin: 1rem auto;
   }
 }
