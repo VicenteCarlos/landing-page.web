@@ -510,3 +510,153 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+@include media(1200px) {
+  button {
+    padding: 0.7rem;
+    font-size: 1.6rem;
+  }
+
+  #content-infos {
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      width: 35%;
+      height: 30rem;
+    }
+
+    .infos-event {
+      width: 50%;
+      margin-top: 0;
+
+      h1 {
+        font-size: 2.4rem;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  #more-infos-imersao {
+    align-items: center;
+
+    hgroup {
+      h2 {
+        font-size: 2.1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    p,
+    ul {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    ul {
+      margin-left: 0;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+
+  #prices {
+    h2 {
+      font-size: 2.1rem;
+    }
+  }
+
+  #ofert-of-month-woman {
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    #about-flavia {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+
+      img {
+        width: 30rem;
+      }
+
+      .infos-flavia {
+        width: 50%;
+
+        p {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+  }
+
+  #event-localization {
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    .localization {
+      font-size: 1.4rem;
+    }
+  }
+
+  #guarantee {
+    figure {
+      img {
+        width: 7.5rem;
+      }
+
+      figcaption {
+        font-size: 2.1rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  #questions {
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    .dropdown {
+      font-size: 1.4rem;
+      width: 40%;
+    }
+  }
+
+  #networks {
+    nav {
+      ul {
+        li {
+          a {
+            img {
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  strong {
+    font-size: 1rem;
+  }
+}
