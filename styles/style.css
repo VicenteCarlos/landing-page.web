@@ -248,35 +248,37 @@ button {
   justify-content: center;
   align-items: center;
 }
-#questions .dropdown div {
-  display: none;
-}
-#questions .dropdown ol {
-  display: none;
-}
-#questions .dropdown:hover div {
+#questions .dropdown .res {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: black;
   margin-top: 1rem;
   line-height: 2.2rem;
 }
-#questions .dropdown:hover ol {
+#questions .dropdown ol {
   width: 80%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: black;
   margin-top: 1rem;
   line-height: 2.2rem;
 }
-#questions .dropdown:hover ol li {
+#questions .dropdown ol li {
   list-style-type: none;
   margin: 1rem 0;
 }
 #questions :nth-child(2) {
   margin-top: 2rem;
+}
+
+footer strong {
+  display: flex;
+  text-align: center;
+  width: 75%;
+  margin: 1rem auto;
 }
 
 #networks nav {
@@ -297,9 +299,90 @@ button {
   width: 2rem;
 }
 
-footer strong {
-  display: flex;
-  text-align: center;
-  width: 75%;
-  margin: 1rem auto;
+@media only screen and (min-width: 768px) {
+  button {
+    padding: 0.9rem;
+    font-size: 2.2rem;
+  }
+  #content-infos img {
+    width: 80%;
+  }
+  #content-infos .infos-event {
+    margin-top: 3.2rem;
+  }
+  #content-infos .infos-event h1 {
+    font-size: 3rem;
+  }
+  #content-infos .infos-event p {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+  #more-infos-imersao hgroup h2 {
+    font-size: 2.5rem;
+  }
+  #more-infos-imersao hgroup h3 {
+    font-size: 2.3rem;
+  }
+  #more-infos-imersao p {
+    font-size: 2.2rem;
+  }
+  #more-infos-imersao ul {
+    font-size: 2.2rem;
+  }
+  #prices h2 {
+    font-size: 2.5rem;
+  }
+  #prices span {
+    font-size: 2.2rem;
+  }
+  #prices p {
+    font-size: 2.2rem;
+  }
+  #prices .limit-times {
+    font-size: 1.3rem;
+  }
+  #prices .legend-prices {
+    font-size: 1.3rem;
+  }
+  #ofert-of-month-woman h2 {
+    font-size: 2.5rem;
+  }
+  #ofert-of-month-woman #about-flavia img {
+    width: 30rem;
+  }
+  #ofert-of-month-woman #about-flavia .infos-flavia p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+  #event-localization h2 {
+    font-size: 2.5rem;
+  }
+  #event-localization .localization {
+    font-size: 2.2rem;
+  }
+  #guarantee figure img {
+    width: 11.5rem;
+  }
+  #guarantee figure figcaption {
+    font-size: 2.4rem;
+  }
+  #guarantee h3 {
+    font-size: 2rem;
+  }
+  #guarantee p {
+    font-size: 2rem;
+  }
+  #questions h2 {
+    font-size: 2.5rem;
+  }
+  #questions .dropdown {
+    font-size: 2rem;
+  }
+  #networks nav ul li a img {
+    width: 3rem;
+  }
+  strong {
+    justify-content: center;
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
