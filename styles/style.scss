@@ -24,6 +24,7 @@ button {
   font-size: 1.2rem;
   font-weight: 600;
   width: 90%;
+  cursor: pointer;
 }
 
 #content-infos {
@@ -297,6 +298,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     .res {
       width: 100%;
@@ -659,4 +661,167 @@ footer {
   strong {
     font-size: 1rem;
   }
+}
+
+@include media(1600px) {
+  button {
+    width: 65%;
+  }
+
+  #content-infos {
+
+    img {
+      width: 30%;
+      height: 35rem;
+    }
+
+    .infos-event {  
+      h1 {
+        font-size: 3rem;
+        width:80%;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      button {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  #more-infos-imersao {
+    align-items: center;
+    margin-top: 5rem;
+
+    hgroup {
+      border: none;
+      h2 {
+        font-size: 2.6rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    p,
+    ul {
+      font-size: 1.6rem;
+    }
+  }
+
+  #prices {
+    margin-top: 5rem;
+
+
+    h2 {
+      font-size: 2.6rem;
+      border: none;
+    }
+
+    .bt-prices {
+      width: 40%;
+    }
+  }
+
+  #ofert-of-month-woman {
+    margin-top: 5rem;
+
+    h2 {
+      font-size: 2.6rem;
+      border: none;
+    }
+
+    .bt-ofert {
+      width: 30%;
+    }
+
+    #about-flavia {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      img {
+        width: 30rem;
+      }
+
+      .infos-flavia {
+        width: 50%;
+        margin-top: 3%;
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+  }
+
+  #event-localization {
+    align-items: center;
+    margin-top: 5rem;
+
+    h2 {
+      font-size: 2.6rem;
+      text-align: center;
+    }
+
+    .localization {
+      font-size: 1.6rem;
+      width: 30%;
+    }
+  }
+
+  #guarantee {
+    figure {
+      img {
+        width: 9.5rem;
+      }
+
+      figcaption {
+        font-size: 2.6rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  #questions {
+    h2 {
+      font-size: 2.6rem;
+      border: none;
+    }
+
+    .dropdown {
+      font-size: 1.6rem;
+      width: 30%;
+    }
+  }
+
+  #networks {
+    nav {
+      ul {
+        li {
+          a {
+            img {
+              width: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  strong {
+    font-size: 1.3rem;
+  }
+
 }

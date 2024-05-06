@@ -21,6 +21,7 @@ button {
   font-size: 1.2rem;
   font-weight: 600;
   width: 90%;
+  cursor: pointer;
 }
 
 #content-infos {
@@ -247,6 +248,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #questions .dropdown .res {
   width: 100%;
@@ -482,5 +484,115 @@ footer strong {
   }
   strong {
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  button {
+    width: 65%;
+  }
+  #content-infos img {
+    width: 30%;
+    height: 35rem;
+  }
+  #content-infos .infos-event h1 {
+    font-size: 3rem;
+    width: 80%;
+  }
+  #content-infos .infos-event p {
+    font-size: 1.6rem;
+  }
+  #content-infos .infos-event button {
+    margin-top: 3rem;
+  }
+  #more-infos-imersao {
+    align-items: center;
+    margin-top: 5rem;
+  }
+  #more-infos-imersao hgroup {
+    border: none;
+  }
+  #more-infos-imersao hgroup h2 {
+    font-size: 2.6rem;
+  }
+  #more-infos-imersao hgroup h3 {
+    font-size: 1.8rem;
+  }
+  #more-infos-imersao p,
+  #more-infos-imersao ul {
+    font-size: 1.6rem;
+  }
+  #prices {
+    margin-top: 5rem;
+  }
+  #prices h2 {
+    font-size: 2.6rem;
+    border: none;
+  }
+  #prices .bt-prices {
+    width: 40%;
+  }
+  #ofert-of-month-woman {
+    margin-top: 5rem;
+  }
+  #ofert-of-month-woman h2 {
+    font-size: 2.6rem;
+    border: none;
+  }
+  #ofert-of-month-woman .bt-ofert {
+    width: 30%;
+  }
+  #ofert-of-month-woman #about-flavia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #ofert-of-month-woman #about-flavia img {
+    width: 30rem;
+  }
+  #ofert-of-month-woman #about-flavia .infos-flavia {
+    width: 50%;
+    margin-top: 3%;
+  }
+  #ofert-of-month-woman #about-flavia .infos-flavia p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  #event-localization {
+    align-items: center;
+    margin-top: 5rem;
+  }
+  #event-localization h2 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  #event-localization .localization {
+    font-size: 1.6rem;
+    width: 30%;
+  }
+  #guarantee figure img {
+    width: 9.5rem;
+  }
+  #guarantee figure figcaption {
+    font-size: 2.6rem;
+  }
+  #guarantee h3 {
+    font-size: 1.8rem;
+  }
+  #guarantee p {
+    font-size: 1.6rem;
+  }
+  #questions h2 {
+    font-size: 2.6rem;
+    border: none;
+  }
+  #questions .dropdown {
+    font-size: 1.6rem;
+    width: 30%;
+  }
+  #networks nav ul li a img {
+    width: 3rem;
+  }
+  strong {
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
