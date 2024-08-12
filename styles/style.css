@@ -1,6 +1,7 @@
 body {
   background-color: #5b5049;
   color: white;
+  overflow: initial;
 }
 
 ::-webkit-scrollbar {
@@ -12,12 +13,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFC107;
+  background: #ffc107;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFD42A;
+  background: #ffd42a;
 }
 
 section {
@@ -38,6 +39,12 @@ button {
   font-weight: 600;
   width: 90%;
   cursor: pointer;
+  display: inline-flex;
+}
+button a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
 }
 
 #content-infos {
@@ -94,21 +101,28 @@ button {
   font-size: 1.15rem;
   text-align: justify;
 }
-#more-infos-imersao ul {
-  font-size: 1.15rem;
-  margin-top: 1rem;
-  margin-left: 13%;
-  text-align: justify;
+#more-infos-imersao #container-cards-goals {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  height: 9rem;
+  width: 90%;
+  overflow-x: scroll;
 }
-#more-infos-imersao ul li {
+#more-infos-imersao #container-cards-goals .card-goal {
+  background-color: #b89c72;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  margin: 0 1.4rem;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#more-infos-imersao #container-cards-goals .card-goal h4 {
   margin: 0.5rem 0;
-}
-#more-infos-imersao p span {
-  font-weight: 600;
-}
-#more-infos-imersao p .span-primary-color {
-  color: #FFC107;
-  text-transform: uppercase;
 }
 
 #prices h2 {
@@ -161,8 +175,12 @@ button {
 #ofert-of-month-woman .bt-ofert {
   width: 80%;
 }
+#ofert-of-month-woman #about-flavia {
+  margin-top: 10%;
+}
 #ofert-of-month-woman #about-flavia img {
-  width: 20rem;
+  width: 16rem;
+  border-radius: 0.5rem;
 }
 #ofert-of-month-woman #about-flavia .infos-flavia {
   display: flex;
@@ -177,6 +195,19 @@ button {
   width: 85%;
   margin: 1rem auto 0 auto;
   line-height: 2rem;
+}
+
+#event-for {
+  margin-top: 2rem;
+}
+#event-for h2 {
+  border-top: 2px solid #B89C72;
+  padding-top: 2rem;
+  width: 85%;
+}
+#event-for video {
+  border-radius: 0.5rem;
+  width: 90%;
 }
 
 #event-localization {
@@ -317,6 +348,49 @@ footer strong {
   width: 2rem;
 }
 
+#modal-goal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.674);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal-goal .content-modal {
+  height: 70vh;
+  width: 85vw;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #5b5049;
+  box-shadow: rgba(9, 9, 9, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(220, 220, 220, 0.25) 0px 12px 13px, rgba(220, 220, 220, 0.25) 0px -3px 5px;
+  text-align: center;
+  overflow-y: scroll;
+}
+#modal-goal .content-modal button {
+  width: 6%;
+  height: 0.5rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B89C72;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 5.5% 6% 0 auto;
+  font-size: 1rem;
+}
+#modal-goal .content-modal p {
+  width: 75%;
+  margin-top: 10%;
+  font-size: 1.05rem;
+  line-height: 2.2rem;
+}
+
 @media only screen and (min-width: 768px) {
   button {
     padding: 0.9rem;
@@ -347,6 +421,15 @@ footer strong {
   #more-infos-imersao ul {
     font-size: 2.2rem;
   }
+  #more-infos-imersao #container-cards-goals {
+    height: 10rem;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal {
+    width: 30%;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal h4 {
+    font-size: 1.5rem;
+  }
   #prices h2 {
     font-size: 2.5rem;
   }
@@ -371,6 +454,12 @@ footer strong {
   #ofert-of-month-woman #about-flavia .infos-flavia p {
     font-size: 2.2rem;
     line-height: 3.2rem;
+  }
+  #event-for h2 {
+    font-size: 2.5rem;
+  }
+  #event-for video {
+    margin-top: 4rem;
   }
   #event-localization h2 {
     font-size: 2.5rem;
@@ -402,6 +491,15 @@ footer strong {
   strong {
     justify-content: center;
     font-size: 1.3rem;
+  }
+  #modal-goal .content-modal button {
+    width: 9%;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  #modal-goal .content-modal p {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -443,11 +541,18 @@ footer strong {
     font-size: 1.4rem;
     text-align: center;
   }
-  #more-infos-imersao ul {
-    margin-left: 0;
+  #more-infos-imersao #container-cards-goals {
+    height: 15rem;
   }
-  #more-infos-imersao ul li {
-    list-style-type: none;
+  #more-infos-imersao #container-cards-goals .card-goal {
+    width: 25%;
+    cursor: pointer;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal img {
+    width: 6rem;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal h4 {
+    font-size: 1.8rem;
   }
   #prices h2 {
     font-size: 2.1rem;
@@ -455,16 +560,23 @@ footer strong {
   #ofert-of-month-woman h2 {
     font-size: 2.1rem;
   }
+  #ofert-of-month-woman .bt-ofert {
+    width: 50%;
+  }
   #ofert-of-month-woman #about-flavia {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
+    margin-top: 8%;
   }
   #ofert-of-month-woman #about-flavia img {
-    width: 30rem;
+    width: 20rem;
   }
   #ofert-of-month-woman #about-flavia .infos-flavia {
     width: 50%;
+  }
+  #ofert-of-month-woman #about-flavia .infos-flavia h2 {
+    margin-top: 0;
   }
   #ofert-of-month-woman #about-flavia .infos-flavia p {
     font-size: 1.3rem;
@@ -500,6 +612,15 @@ footer strong {
   }
   strong {
     font-size: 1rem;
+  }
+  #modal-goal .content-modal {
+    height: 90vh;
+  }
+  #modal-goal .content-modal button {
+    width: 5%;
+    font-size: 1.5rem;
+    margin-top: 3%;
+    margin-right: 3%;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -537,6 +658,20 @@ footer strong {
   #more-infos-imersao ul {
     font-size: 1.6rem;
   }
+  #more-infos-imersao #container-cards-goals {
+    height: 15rem;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal {
+    width: 20%;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal img {
+    width: 6rem;
+  }
+  #more-infos-imersao #container-cards-goals .card-goal h4 {
+    font-size: 1.7rem;
+  }
   #prices {
     margin-top: 5rem;
   }
@@ -560,10 +695,10 @@ footer strong {
   #ofert-of-month-woman #about-flavia {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
   }
   #ofert-of-month-woman #about-flavia img {
-    width: 30rem;
+    width: 25rem;
   }
   #ofert-of-month-woman #about-flavia .infos-flavia {
     width: 50%;
@@ -571,7 +706,10 @@ footer strong {
   }
   #ofert-of-month-woman #about-flavia .infos-flavia p {
     font-size: 1.6rem;
-    line-height: 2.2rem;
+    line-height: 3rem;
+  }
+  #event-for h2 {
+    padding-top: 5rem;
   }
   #event-localization {
     align-items: center;
@@ -610,5 +748,12 @@ footer strong {
   }
   strong {
     font-size: 1.3rem;
+  }
+  #modal-goal .content-modal {
+    width: 50vw;
+  }
+  #modal-goal .content-modal button {
+    width: 5%;
+    height: 2.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
 body {
   background-color: #5b5049;
   color: white;
+  overflow: initial;
 }
 
 ::-webkit-scrollbar {
@@ -15,14 +16,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFC107;
+  background: #ffc107;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFD42A;
+  background: #ffd42a;
 }
-
 
 section {
   text-align: center;
@@ -42,6 +42,13 @@ button {
   font-weight: 600;
   width: 90%;
   cursor: pointer;
+  display: inline-flex;
+
+  a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+  }
 }
 
 #content-infos {
@@ -110,25 +117,34 @@ button {
     text-align: justify;
   }
 
-  ul {
-    font-size: 1.15rem;
-    margin-top: 1rem;
-    margin-left: 13%;
-    text-align: justify;
+  #container-cards-goals {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    height: 9rem;
+    width: 90%;
+    overflow-x: scroll;
 
-    li {
-      margin: 0.5rem 0;
-    }
-  }
+    .card-goal {
+      background-color: #b89c72;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: 0.5rem;
+      margin: 0 1.4rem;
+      width: 50%;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-  p {
-    span {
-      font-weight: 600;
-    }
-
-    .span-primary-color {
-      color: $primary-color;
-      text-transform: uppercase;
+      h4 {
+        margin: 0.5rem 0;
+      }
     }
   }
 }
@@ -195,8 +211,11 @@ button {
   }
 
   #about-flavia {
+    margin-top: 10%;
+
     img {
-      width: 20rem;
+      width: 16rem;
+      border-radius: 0.5rem;
     }
 
     .infos-flavia {
@@ -215,6 +234,21 @@ button {
         line-height: 2rem;
       }
     }
+  }
+}
+
+#event-for {
+  margin-top: 2rem;
+
+  h2 {
+    border-top: 2px solid $secondary-color;
+    padding-top: 2rem;
+    width: 85%;
+  }
+
+  video {
+    border-radius: 0.5rem;
+    width: 90%;
   }
 }
 
@@ -382,6 +416,57 @@ footer {
   }
 }
 
+#modal-goal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.674);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content-modal {
+    height: 70vh;
+    width: 85vw;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5b5049;
+    box-shadow: rgba(9, 9, 9, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(220, 220, 220, 0.25) 0px 12px 13px,
+      rgba(220, 220, 220, 0.25) 0px -3px 5px;
+    text-align: center;
+    overflow-y: scroll;
+
+    button {
+      width: 6%;
+      height: 0.5rem;
+      padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondary-color;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      margin: 5.5% 6% 0 auto;
+      font-size: 1rem;
+    }
+
+    p {
+      width: 75%;
+      margin-top: 10%;
+      font-size: 1.05rem;
+      line-height: 2.2rem;
+    }
+  }
+}
+
 @include media(768px) {
   button {
     padding: 0.9rem;
@@ -426,6 +511,18 @@ footer {
     ul {
       font-size: 2.2rem;
     }
+
+    #container-cards-goals {
+      height: 10rem;
+
+      .card-goal {
+        width: 30%;
+
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 
   #prices {
@@ -467,6 +564,16 @@ footer {
           line-height: 3.2rem;
         }
       }
+    }
+  }
+
+  #event-for {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    video {
+      margin-top: 4rem;
     }
   }
 
@@ -528,6 +635,21 @@ footer {
     justify-content: center;
     font-size: 1.3rem;
   }
+
+  #modal-goal {
+    .content-modal {
+      button {
+        width: 9%;
+        height: 3rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+      }
+    }
+  }
 }
 
 @include media(1200px) {
@@ -580,11 +702,20 @@ footer {
       text-align: center;
     }
 
-    ul {
-      margin-left: 0;
+    #container-cards-goals {
+      height: 15rem;
 
-      li {
-        list-style-type: none;
+      .card-goal {
+        width: 25%;
+        cursor: pointer;
+
+        img {
+          width: 6rem;
+        }
+
+        h4 {
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -600,17 +731,26 @@ footer {
       font-size: 2.1rem;
     }
 
+    .bt-ofert {
+      width: 50%;
+    }
+
     #about-flavia {
       display: flex;
       justify-content: space-evenly;
-      align-items: flex-end;
+      align-items: center;
+      margin-top: 8%;
 
       img {
-        width: 30rem;
+        width: 20rem;
       }
 
       .infos-flavia {
         width: 50%;
+
+        h2 {
+          margin-top: 0;
+        }
 
         p {
           font-size: 1.3rem;
@@ -678,6 +818,19 @@ footer {
   strong {
     font-size: 1rem;
   }
+
+  #modal-goal {
+    .content-modal {
+      height: 90vh;
+
+      button {
+        width: 5%;
+        font-size: 1.5rem;
+        margin-top: 3%;
+        margin-right: 3%;
+      }
+    }
+  }
 }
 
 @include media(1600px) {
@@ -686,16 +839,15 @@ footer {
   }
 
   #content-infos {
-
     img {
       width: 30%;
       height: 35rem;
     }
 
-    .infos-event {  
+    .infos-event {
       h1 {
         font-size: 3rem;
-        width:80%;
+        width: 80%;
       }
 
       p {
@@ -727,11 +879,28 @@ footer {
     ul {
       font-size: 1.6rem;
     }
+
+    #container-cards-goals {
+      height: 15rem;
+      justify-content: center;
+      margin-top: 5%;
+
+      .card-goal {
+        width: 20%;
+
+        img {
+          width: 6rem;
+        }
+
+        h4 {
+          font-size: 1.7rem;
+        }
+      }
+    }
   }
 
   #prices {
     margin-top: 5rem;
-
 
     h2 {
       font-size: 2.6rem;
@@ -758,10 +927,10 @@ footer {
     #about-flavia {
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: flex-start;
 
       img {
-        width: 30rem;
+        width: 25rem;
       }
 
       .infos-flavia {
@@ -770,9 +939,15 @@ footer {
 
         p {
           font-size: 1.6rem;
-          line-height: 2.2rem;
+          line-height: 3rem;
         }
       }
+    }
+  }
+
+  #event-for {
+    h2 {
+      padding-top: 5rem;
     }
   }
 
@@ -841,4 +1016,14 @@ footer {
     font-size: 1.3rem;
   }
 
+  #modal-goal {
+    .content-modal {
+      width: 50vw;
+
+      button {
+        width: 5%;
+        height: 2.5rem;
+      }
+    }
+  }
 }
