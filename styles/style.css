@@ -1,5 +1,5 @@
 body {
-  background-color: #5b5049;
+  background-color: #191919;
   color: white;
   overflow: initial;
 }
@@ -28,9 +28,14 @@ section {
   align-items: center;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 button {
   margin-top: 1.5rem;
-  background-color: #ff4707;
+  background-color: #d32f2f;
   border-radius: 0.5rem;
   padding: 0.7rem;
   color: white;
@@ -63,7 +68,7 @@ button a {
   font-size: 2rem;
 }
 #content-infos .infos-event h1 span {
-  color: #B89C72;
+  color: #FFC107;
   text-transform: uppercase;
 }
 #content-infos .infos-event p {
@@ -88,7 +93,6 @@ button a {
 #more-infos-imersao hgroup h2 {
   color: #FFC107;
   text-transform: uppercase;
-  font-size: 1.5rem;
   width: 85%;
   margin: 2rem auto 0 auto;
 }
@@ -104,13 +108,14 @@ button a {
 #more-infos-imersao #container-cards-goals {
   display: flex;
   justify-content: flex-start;
-  margin-top: 2rem;
+  margin-top: 3rem;
   height: 9rem;
   width: 90%;
   overflow-x: scroll;
 }
 #more-infos-imersao #container-cards-goals .card-goal {
-  background-color: #b89c72;
+  border: 0.0625rem solid gray;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,9 +125,49 @@ button a {
   margin: 0 1.4rem;
   width: 50%;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  cursor: pointer;
 }
 #more-infos-imersao #container-cards-goals .card-goal h4 {
   margin: 0.5rem 0;
+}
+#more-infos-imersao #container-content-cards-goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal h4:not(.number-principle) {
+  color: #FFC107;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal hgroup {
+  border-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal hgroup .principle-of,
+#more-infos-imersao #container-content-cards-goals .content-card-goal hgroup .number-principle {
+  font-size: 1.5rem;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal hgroup .number-principle {
+  margin: 0 0.5rem;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal .description-content-card-goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal .description-content-card-goal h4 {
+  margin-right: auto;
+  margin-left: 7.5%;
+}
+#more-infos-imersao #container-content-cards-goals .content-card-goal .description-content-card-goal p {
+  margin-top: 0;
 }
 
 #prices h2 {
