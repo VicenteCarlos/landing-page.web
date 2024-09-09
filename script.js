@@ -43,7 +43,7 @@ const principlesOfGoals = [
     id: "06",
     principle: "Relacionamentos",
     description:
-      "Cultivar bons relacionamentos, pois a forma como estabelece os relações interpessoais determina seus resultados ao longo da vida.",
+      "Cultivar bons relacionamentos, pois a forma como estabelece as relações interpessoais determina seus resultados ao longo da vida.",
   },
   {
     id: "07",
@@ -66,7 +66,7 @@ const principlesOfGoals = [
   {
     id: "10",
     principle: "Integridade | Autenticidade",
-    description: "Uma vida de paz, realização pessoal de recompensa eterna.",
+    description: "Uma vida de paz, de realização pessoal com recompensa eterna.",
   },
   {
     id: "11",
